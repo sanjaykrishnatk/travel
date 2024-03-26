@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <!-- bootstrap css and js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Strike&family=Roboto+Slab:wght@100..900&family=Staatliches&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">   
+   <link rel="icon" href="./media/favicon.ico"> 
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark navbar-expand-lg p-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img id="logo" src="./media/logo2.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white !important;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active me-5 text-light" aria-current="page" href="#home">Home</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link me-5 text-light" aria-current="page" href="#about">About</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link me-5 text-light" aria-current="page" href="#packages">Packages</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link me-5 text-light" aria-current="page" href="#reviews">Reviews</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link me-5 text-light" aria-current="page" href="#contact">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="row m-0" id="home">
+    <div class="col-md-12 p-0">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./media/img11.jpg" class="d-block w-100" alt="..." style="object-fit: cover;" height="790px">
+                <div class="w-100 position-absolute start-50 translate-middle" style="top:50vh">
+                  <h5 id="intro-text" class="text-light text-center">UNLEASH YOUR WANDERLUST</h5>
+              <p class="intro-passage text-light text-center intro-passage-long">Get ready for the adventure of a lifetime! Explore breathtaking landscapes, experience thrilling activities, and create unforgettable memories with our expertly guided tours. From mountain treks to jungle expeditions, embark on your next adventure with us today.</p>
+              <div id="buttons-container" class="text-center">
+                <button type="button" class="btn mt-5 home-btn rounded-0">BOOK NOW</button>
+                <button type="button" class="btn mt-5 home-btn rounded-0">KNOW MORE</button>
+            </div>
+              </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="./media/everest.jpg" class="d-block w-100" alt="..." style="object-fit: cover;" height="790px">
+                <div class="w-100 position-absolute start-50 translate-middle" style="top:50vh">
+                  <h5 id="intro-text" class="text-light text-center">Himalayan Havens: Peaks and Paths</h5>
+              <p class="intro-passage text-light text-center intro-passage-long">Experience the Majesty of the Himalayas: Unveiling the Mystique of Ancient Paths and Towering Peaks. Immerse Yourself in the Vibrant Tapestry of Local Culture on an Adventure of Discovery and Wonder in the Heart of the World's Greatest Mountain Range!</p>
+              <div id="buttons-container" class="text-center">
+                <button type="button" class="btn mt-5 home-btn rounded-0">KNOW MORE</button>
+            </div>
+              </div>
+              </div> <div class="carousel-item" data-bs-interval="10000">
+                <img src="./media/pangong.jpg" class="d-block w-100" alt="..." style="object-fit: cover;" height="790px">
+                <div class="w-100 position-absolute start-50 translate-middle" style="top:50vh">
+                  <h5 id="intro-text" class="text-light text-center">Exploring Pangong: Serenity & Splendor</h5>
+              <p class="intro-passage text-light text-center intro-passage-long">Unveiling the Serenity of Pangong Mountain: Discover Tranquil Trails, Embrace Majestic Peaks, and Immerse Yourself in Nature's Embrace. Join Us for an Adventure of Discovery and Serenity in the Heart of this Spectacular Mountain Range!</p>
+              <div id="buttons-container" class="text-center">
+                <button type="button" class="btn mt-5 home-btn rounded-0">KNOW MORE</button>
+            </div>
+              </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row mt-5">
+        <h5 id="page-2-heading" class="text-center section-headers">EXPLORE</h5>
+        <h5 class="text-center about-sub-header mb-3">Roam the world, redefining <br> your journey</h5>   
+<div class="d-flex justify-content-center">
+        <img class="mt-3 fvect" src="./media/shoe.png" alt="trek-img">
+  
+</div> 
+
+ </div>
+  </div>
+  <div class="row mt-5" id="about">
+    <div class="col-md-12 about-us">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="section-headers">About us</h5>
+          <h5 class="about-sub-header">Summiting Dreams,<br> Forging Bonds</h5>
+          <p class="about-txt">At our adventure travel company, we thrive on exploration amidst the rugged beauty of mountains. With a keen eye for adventure and a commitment to safety, we specialize in organizing exhilarating hiking and trekking expeditions. Our experienced guides are dedicated to ensuring every moment of your journey is filled with excitement and awe.</p>
+          <p class="about-txt">Step into the world of adventure with us. From novice hikers to seasoned mountaineers, our carefully crafted expeditions cater to all levels of adventurers. Join our tight-knit community and embark on a quest to conquer nature's most magnificent peaks while creating cherished memories and lifelong friendships. Welcome to a world where every trail leads to new heights of discovery.</p>
+        </div>
+        <div class="col-md-6 about-image d-flex">
+          <img src="./media/trekk.png" alt="about-image" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+ <div class="row packages mt-5 mb-5" id="packages">
+  <h5 id="page-2-heading" class="section-headers packages-title">PACKAGES</h5>
+  <h5 class="about-sub-header mb-3 packages-sub-title">Top packages <br> for you</h5>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item pkg-slide">
+          <div class="row mt-5 mb-5">
+            <div class="col-md-12">
+              <div class="row package">
+                <div class="col-md-3">
+                  <div class="card text-bg-dark package-wrapper">
+                    <img src="./media/eve.jpg" class="card-img  package-card" alt="...">
+                    <div class="card-img-overlay package-txt">
+                      <img src="./media/rating1.png" alt="" class="w-25 pkg-img">
+                      <h5 class="card-title">Mount Everest</h5>
+                   <div class="d-flex align-items-center">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="mb-0 ms-2 pkg-content">10 to 15 days</p>
+                   </div>
+                   <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p class="mb-0 ms-2 pkg-content">Nepal/Tibet</p>
+                   </div>
+                    </div>
+                  </div>        
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-bg-dark package-wrapper">
+                    <img src="./media/alp.jpg" class="card-img package-card" alt="...">
+                    <div class="card-img-overlay package-txt">
+                      <img src="./media/rating1.png" alt="" class="w-25">
+                      <h5 class="card-title">Swiss Alps</h5>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="mb-0 ms-2 pkg-content">5 to 7 days</p>
+                   </div>
+                   <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p class="mb-0 ms-2 pkg-content">Switzerland</p>
+                   </div>            
+                  </div>
+                  </div> 
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-bg-dark package-wrapper">
+                    <img src="./media/leh.jpg" class="card-img package-card" alt="...">
+                    <div class="card-img-overlay package-txt">
+                      <img src="./media/rating2.png" alt="" class="w-25">
+                      <h5 class="card-title">Leh-Ladakh</h5>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="mb-0 ms-2 pkg-content">3 to 4 days</p>
+                   </div>
+                   <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p class="mb-0 ms-2 pkg-content">India</p>
+                   </div>
+                  </div>
+                  </div> 
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-bg-dark package-wrapper">
+                    <img src="./media/kas.jpg" class="card-img package-card" alt="...">
+                    <div class="card-img-overlay package-txt">
+                      <img src="./media/rating1.png" alt="" class="w-25">
+                      <h5 class="card-title">Kashmir Valley</h5>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="mb-0 ms-2 pkg-content">2 to 3 days</p>
+                   </div>
+                   <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p class="mb-0 ms-2 pkg-content">Kashmir, India</p>
+                   </div>            
+                  </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>      
+        </div>
+        <div class="carousel-item pkg-slide  active">
+          <div class="row mt-5 mb-5">
+            <div class="col-md-12">
+              <div class="row package">
+                <div class="col-md-3">
+                  <div class="card text-bg-dark package-wrapper">
+                    <img src="./media/img2.jpg" class="card-img  package-card" alt="...">
+                    <div class="card-img-overlay package-txt">
+                      <img src="./media/rating1.png" alt="" class="w-25 pkg-img">
+                      <h5 class="card-title">Mount Kilimanjaro</h5>
+                   <div class="d-flex align-items-center">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="mb-0 ms-2 pkg-content">10 to 15 days</p>
+                   </div>
+                   <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p class="mb-0 ms-2 pkg-content">Tanzania, Africa</p>
+                   </div>
+                    </div>
+                  </div>        
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-bg-dark package-wrapper">
+                    <img src="./media/dolomites.jpg" class="card-img package-card" alt="...">
+                    <div class="card-img-overlay package-txt">
+                      <img src="./media/rating1.png" alt="" class="w-25">
+                      <h5 class="card-title">Dolomites</h5>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="mb-0 ms-2 pkg-content">5 to 7 days</p>
+                   </div>
+                   <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p class="mb-0 ms-2 pkg-content">Italy</p>
+                   </div>            
+                  </div>
+                  </div> 
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-bg-dark package-wrapper">
+                    <img src="./media/rocky.jpg" class="card-img package-card" alt="...">
+                    <div class="card-img-overlay package-txt">
+                      <img src="./media/rating2.png" alt="" class="w-25">
+                      <h5 class="card-title">Rocky Mountains</h5>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="mb-0 ms-2 pkg-content">5 to 7 days</p>
+                   </div>
+                   <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p class="mb-0 ms-2 pkg-content">USA/Canada</p>
+                   </div>
+                  </div>
+                  </div> 
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-bg-dark package-wrapper">
+                    <img src="./media/fuji.jpg" class="card-img package-card" alt="...">
+                    <div class="card-img-overlay package-txt">
+                      <img src="./media/rating1.png" alt="" class="w-25">
+                      <h5 class="card-title">Mount Fuji</h5>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="mb-0 ms-2 pkg-content">3 to 4 days</p>
+                   </div>
+                   <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p class="mb-0 ms-2 pkg-content">Japan</p>
+                   </div>            
+                  </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="carousel-item pkg-slide">
+          <div class="row mt-5 mb-5">
+            <div class="col-md-12">
+              <div class="row package">
+                <div class="col-md-3">
+                  <div class="card text-bg-dark package-wrapper">
+                    <img src="./media/tian.jpg" class="card-img  package-card" alt="...">
+                    <div class="card-img-overlay package-txt">
+                      <img src="./media/rating1.png" alt="" class="w-25 pkg-img">
+                      <h5 class="card-title">Tian Shan Mountains</h5>
+                   <div class="d-flex align-items-center">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="mb-0 ms-2 pkg-content">10 to 15 days</p>
+                   </div>
+                   <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p class="mb-0 ms-2 pkg-content">Central Asia</p>
+                   </div>
+                    </div>
+                  </div>        
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-bg-dark package-wrapper">
+                    <img src="./media/cr.jpg" class="card-img package-card" alt="...">
+                    <div class="card-img-overlay package-txt">
+                      <img src="./media/rating1.png" alt="" class="w-25">
+                      <h5 class="card-title">Canadian Rockies</h5>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="mb-0 ms-2 pkg-content">5 to 7 days</p>
+                   </div>
+                   <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p class="mb-0 ms-2 pkg-content">Canada</p>
+                   </div>            
+                  </div>
+                  </div> 
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-bg-dark package-wrapper">
+                    <img src="./media/andes.jpg" class="card-img package-card" alt="...">
+                    <div class="card-img-overlay package-txt">
+                      <img src="./media/rating2.png" alt="" class="w-25">
+                      <h5 class="card-title">The Andes</h5>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="mb-0 ms-2 pkg-content">3 to 4 days</p>
+                   </div>
+                   <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p class="mb-0 ms-2 pkg-content">South America</p>
+                   </div>
+                  </div>
+                  </div> 
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-bg-dark package-wrapper">
+                    <img src="./media/atlas.jpg" class="card-img package-card" alt="...">
+                    <div class="card-img-overlay package-txt">
+                      <img src="./media/rating1.png" alt="" class="w-25">
+                      <h5 class="card-title">Atlas Mountains</h5>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="mb-0 ms-2 pkg-content">2 to 3 days</p>
+                   </div>
+                   <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p class="mb-0 ms-2 pkg-content">Morocco</p>
+                   </div>            
+                  </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>      </div>
+      </div>
+      <button class="carousel-control-prev slider-next" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+ </div>
+ <div class="row reviews" id="reviews">
+<div class="row">
+    <h5 id="page-2-heading" class=" text-center section-headers packages-title">REVIEWS</h5>
+    <h5 class="text-center about-sub-header mb-3 packages-sub-title">Discover what our travelers<br> are saying!</h5>
+</div>
+<div class="col-md-1"></div>
+<div class="col-md-10">
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-interval="3000">
+  <div class="carousel-inner review-carousel">
+    <div class="carousel-item active review-slide">
+      <div class="row d-flex justify-content-center">
+        <div class="card mb-5 review-card mt-5" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+              <img src="./media/p7.jpg" class="rounded-circle review-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Aspen Ridge</h5>
+                <img src="./media/rating1.png" alt="" class="w-25 pkg-img"> 
+                <p class="card-text pkg-content review-txt">Captivating landscapes, thrilling escapades, and heartfelt connections made every mile of this journey a cherished memory.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+    <div class="carousel-item review-slide">
+      <div class="row d-flex justify-content-center">
+        <div class="card mb-5 review-card mt-5" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+              <img src="./media/p1.jpg" class="rounded-circle review-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Blaze Canyon</h5>
+                <img src="./media/rating1.png" alt="" class="w-25 pkg-img"> 
+                <p class="card-text pkg-content review-txt">An unforgettable journey filled with breathtaking landscapes and exhilarating experiences. Truly a trip of a lifetime!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+    <div class="carousel-item review-slide">
+      <div class="row d-flex justify-content-center">
+        <div class="card mb-5 review-card mt-5" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+              <img src="./media/p2.jpg" class="rounded-circle review-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Sierra Wilder</h5>
+                <img src="./media/rating1.png" alt="" class="w-25 pkg-img"> 
+                <p class="card-text pkg-content review-txt">Every moment of our adventure felt like a scene from a movie, with thrills, views, and unforgettable encounters. An epic journey that left us craving more.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+     </div>
+    <div class="carousel-item review-slide">
+      <div class="row d-flex justify-content-center">
+        <div class="card mb-5 review-card mt-5" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+              <img src="./media/p6.jpg" class="rounded-circle review-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Phoenix Blaze</h5>
+                <img src="./media/rating1.png" alt="" class="w-25 pkg-img"> 
+                <p class="card-text pkg-content review-txt">Immersing ourselves in the beauty of nature and the warmth of local cultures made this trip an experience we'll cherish forever.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+  <button class="carousel-control-prev tst" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next tst" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<div class="col-md-1"></div>
+ </div>
+ <div class="row mt-5">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <img src="./media/camp2.png" class="w-100 camp-img" alt="">
+      </div>
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <h1 class="text-light quote">"Survival can be summed up in three words – never give up. That’s the heart of it really. Just keep trying." <br>- Bear Grylls</h1>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1"></div>
+ </div>
+ <div class="row footer" id="contact">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="row">
+          <div class="col-md-3 d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <div class="contact-content">
+              <h6 class="contact-header">Email</h6>
+              <p class="contact-sub-header">contact@travelista.com</p>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-mobile contact-icon"></i>
+            <div class="contact-content">
+              <h6 class="contact-header">Call us</h6>
+              <p class="contact-sub-header mob-content">+91 7994465581</p>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-map-location-dot contact-icon"></i>
+              <div class="contact-content">
+              <h6 class="contact-header map-content">Head Office</h6>
+              <p class="contact-sub-header">1st Floor Zing Arcade,<br>Gurgaon, India</p>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex justify-content-center align-items-center">
+            <img src="./media/travel-map.png" class="w-100 map" alt="" style="filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(180deg);">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="row">
+          <div class="col-md-3 d-flex justify-content-center align-items-center">
+            <div class="footer-content ms-5 about-wrapper">
+              <h6 class="footer-row-txt ps-4 mb-4">About us</h6>
+              <p class="footer-row-txt text-center ps-4 pe-4">
+                Explore the world with Travelista, where millions of travelers effortlessly discover unforgettable experiences and a plethora of travel choices</p>
+              <div class="d-flex justify-content-center align-items-center mb-5 mt-3">
+                <i class="fa-brands fa-instagram footer-icons me-3"></i>
+                <i class="fa-brands fa-facebook footer-icons me-3"></i>
+                <i class="fa-brands fa-x-twitter footer-icons me-3"></i>
+                <i class="fa-brands fa-youtube footer-icons me-3"></i>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex justify-content-center">
+            <div class="footer-content services">
+              <h6 class="footer-row-txt pt-3 mb-4">Services</h6>
+              <ul class="footer-list">
+                <li class="text-light mb-2">Guided Tours</li>
+                <li class="text-light mb-2">Customized Itineraries</li>
+                <li class="text-light mb-2">Wildlife Safaris</li>
+                <li class="text-light mb-2">Expeditions</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex justify-content-center">
+            <div class="footer-content services-2">
+              <ul class="footer-list">
+                <li class="text-light mb-2 mt-5 pt-2">Careers</li>
+                <li class="text-light mb-2">News & blogs</li>
+                <li class="text-light mb-2">Travel Insurance</li>
+                <li class="text-light mb-2">Offers & Promotions</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex justify-content-center">
+            <div class="footer-content subscribe">
+              <h6 class="footer-row-txt pt-3 mb-4">Newsletter</h6>
+             <p class="footer-row-txt text-center pe-5">Adventure awaits in your inbox! Subscribe to our newsletter for exciting updates.</p>
+                 <input type="email" class="newsletter mt-5" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-addon2">
+                  <button class="btn sub-btn" type="button">Subscribe</button>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="row footer-image">
+      <img src="./media/p11.png" alt="footer-image" class="w-100 footer-image">
+    </div>
+  </div>
+ </div>
+</body>
+</html>
