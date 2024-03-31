@@ -88,6 +88,12 @@ margin-bottom: 20px;
 .about-wrapper{
     padding-right: 40px;
 }
+.services-section{
+    margin-left: 45px;
+}
+.services-header{
+    padding-right: 100px;
+}
 }
 @media (min-width:768px){
 #intro-text{
@@ -129,6 +135,9 @@ font-size: 80px;
     .review-img{
         margin-right: 45px;
         width: 60%;
+    }
+    .services-section{
+        margin-left: 45px;
     }
 }
 #intro-text{
@@ -254,7 +263,7 @@ line-height: 1.4;
 .section-headers{
     color:#d596b9;
     font-family: "Staatliches", sans-serif;
-
+    font-size: 30px;
 }
 .about-txt{
     transform: translateY(30px);
@@ -368,4 +377,14 @@ line-height: 1.4;
 .footer{
     padding: 0 !important;
     margin: 0 !important;   
+}
+.services-card{  
+    background-color: rgba(0, 0, 0, 0.079);
+    border: 0;
+}
+.services-icon{
+    color: white;
+}
+.services-text{
+    font-family: "Roboto Slab", serif;
 }
