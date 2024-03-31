@@ -388,3 +388,16 @@ line-height: 1.4;
 .services-text{
     font-family: "Roboto Slab", serif;
 }
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content{
+      background-color: rgb(188, 180, 180);
+  }
+  .modal-header,.modal-footer{
+    font-family: "Staatliches", sans-serif;
+    border: 0;
+  }
